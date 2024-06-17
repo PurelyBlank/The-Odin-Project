@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin: 0px;
     padding: 0px;
 }
