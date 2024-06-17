@@ -37,8 +37,6 @@ input {
 }
 
 .content {
-  /* text-align: center;
-  padding: 250px; */
   flex: 1;
   display: flex;
   align-items: center;
