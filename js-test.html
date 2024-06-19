@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput">
+    <button onclick="handleAdd7()">Add 7</button>
+    <p id="result"></p> -->
+
+    <!-- <label for="num1Input">Enter num1: </label>
+    <input type="number" id="num1">
+    <label for="num2Input">Enter num2: </label>
+    <input type="number" id="num2">
+    <button onclick="handleMultiply()">Multiply</button>
+    <p id="result"></p> -->
+
+    <!-- <label for="capitalizeString">Enter string: </label>
+    <input type="text" id="String">
+    <button onclick="handleCapitalize()">Capitalize</button>
+    <p id="result"></p> -->
+
+    <label for="lastLetter">Enter string: </label>
+    <input type="text" id="String2">
+    <button onclick="handleLastLetter()">Last Letter</button>
+    <p id="result"></p>
+
+    <script>
+        
+        let lastLetter = (string) => string.charAt(string.length - 1);
+
+        function handleLastLetter() {
+            let string = document.getElementById("String2").value;
+            let result = lastLetter(string);
+            console.log(result);
+            document.getElementById('result').textContent = 'Result: ' + result;
+        }
+
+        let capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+
+        function handleCapitalize() {
+            let string = document.getElementById("String").value;
+            let result = capitalize(string);
+            console.log(result);
+            document.getElementById('result').textContent = 'Result: ' + result;
+        }
+
+        let multiply = (num1, num2) => num1 * num2;
+        
+        function handleMultiply() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = multiply(num1, num2);
+            console.log(result);
+            document.getElementById('result').textContent = 'Result: ' + result;
+        }
+
+        function add7(num) {
+            let result = num + 7;
+            console.log(result);
+            return result;
+        }
+
+        function handleAdd7() {
+            let input = document.getElementById('numberInput').value;
+            let num = parseFloat(input);  // Convert input to a number
+            if (!isNaN(num)) {
+                let result = add7(num);
+                document.getElementById('result').textContent = 'Result: ' + result;
+            } else {
+                document.getElementById('result').textContent = 'Please enter a valid number';
+            }
+        }
+    </script>
+</body>
+</html>
