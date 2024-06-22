@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+      let p_tag = document.createElement("p");
+      p_tag.textContent = "Hey I'm red!";
+      p_tag.style.color = "red";
+
+      let h3_tag = document.createElement("h3");
+      h3_tag.textContent = "I'm a blue h3!";
+      h3_tag.style.color = "blue";
+
+      let div_elem = document.createElement("div");
+      div_elem.style.backgroundColor = "pink";
+      div_elem.style.border = "1px solid black";
+      
+      let div_h1_tag = document.createElement("h1")
+      div_h1_tag.textContent = "I'm a div";
+      let div_p_tag = document.createElement("p");
+      div_p_tag.textContent = "ME TOO!";
+
+      div_elem.appendChild(div_h1_tag, div_p_tag);
+
+      document.body.append(p_tag, h3_tag, div_elem);
+  </script>
+</body>
+</html>
