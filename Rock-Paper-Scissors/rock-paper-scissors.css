@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+.rps-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 5vw;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: #2a52be;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#restart-rps {
+    margin-top: 50px;
+    font-size: 2vw;
+}
+
+#score {
+    display: flex;
+    gap: 50px;
+    font-size: 3vw;
+}
+
+#tie {
+    font-size: 3vw;
+    padding-bottom: 20px;
+}
+
+#winner {
+    font-size: 3vw;
+}
