@@ -89,3 +89,75 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* Answer */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.nav li, 
+.menu li {
+  list-style-type: none;
+}
+
+.header {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.menu {
+  align-self: center;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.sidebar {
+  display: grid;
+  gap: 50px;
+  grid-row: 2 / 4;
+}
+
+.photo, .side-content {
+  display: grid;
+  align-items: center;
+} 
+
+.nav {
+  grid-column: 2 / -1;
+  display: grid;
+  align-items: center;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.article .card {
+  height: 200px;
+}
+
+.card p {
+  padding: 5px;
+}
+
+.footer {
+  grid-column: 1 / -1;
+}
