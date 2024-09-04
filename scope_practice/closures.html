@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="../base.css">
+</head>
+
+<body>
+  <script>
+  //examples go in here
+    //function outer() {
+    //    const outerVar = "Hey I am the outer var"
+
+    //    function inner() {
+    //        const innerVar = "Hey I am an inner var"
+    //        console.log(innerVar)
+    //        console.log(outerVar)
+    //    }
+    //    inner()
+    //}
+    //outer()
+    function createGreeting(greeting = "") {
+        const myGreet = greeting.toUpperCase();
+
+        return function(name) {
+          return `${myGreet} ${name}`;
+        };
+}
+  </script>
+</body>
+</html>
